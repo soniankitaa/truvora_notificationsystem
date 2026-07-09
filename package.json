@@ -1,0 +1,30 @@
+{
+  "name": "truvora",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "npm@11.18.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "turbo run format"
+  },
+  "devDependencies": {
+    "turbo": "^2.10.3"
+  },
+  "dependencies": {
+    "react-confetti": "^6.4.0",
+    "react-countup": "^6.5.3",
+    "react-icons": "^5.7.0",
+    "react-intersection-observer": "^10.0.3",
+    "react-resizable-panels": "^4.12.1",
+    "react-simple-maps": "^3.0.0",
+    "react-use": "^17.6.1",
+    "react-world-flags": "^1.6.0"
+  }
+}
