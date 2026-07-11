@@ -447,14 +447,6 @@ Developing Truvora helped strengthen my understanding of:
 
 ---
 
-# 📄 License
-
-This project is developed for educational and learning purposes.
-
-Feel free to explore, modify, and build upon the project for personal learning.
-
----
-
 # 👩‍💻 PRESENTED BY:-
 
 **Ankita Soni**
