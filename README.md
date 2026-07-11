@@ -367,23 +367,6 @@ npm start
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots of the application here.
-
-```
-🏠 Dashboard
-
-🔔 Notification Panel
-
-📬 Unread Notification Badge
-
-🧪 API Testing (Postman)
-
-📱 Responsive Mobile View
-```
-
----
 
 # 📈 Future Improvements
 
