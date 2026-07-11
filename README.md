@@ -455,14 +455,10 @@ Feel free to explore, modify, and build upon the project for personal learning.
 
 ---
 
-# 👩‍💻 Author
+# 👩‍💻 PRESENTED BY:-
 
 **Ankita Soni**
 
-BCA Student | Full Stack Developer
-
-GitHub: https://github.com/soniankitaa
-
 ---
 
-⭐ If you found this project helpful, consider giving it a **star** on GitHub!
+
