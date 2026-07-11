@@ -24,7 +24,7 @@ export default function UpcomingMeetings() {
     <div className="rounded-3xl border bg-card p-6 shadow-sm">
 
       <h2 className="mb-6 text-xl font-bold">
-        Today's Meetings
+        Today{`'`}s meetings
       </h2>
 
       <div className="space-y-4">

@@ -11,18 +11,10 @@ import {
 } from "lucide-react";
 export default function DemoPage() {
   const [message, setMessage] = useState("");
-  const [activeStep, setActiveStep] = useState(-1);
+  
 
-async function playPipeline() {
-  for (let i = 0; i < 7; i++) {
-    setActiveStep(i);
-    await new Promise((resolve) => setTimeout(resolve, 450));
-  }
 
-  setTimeout(() => {
-    setActiveStep(-1);
-  }, 1200);
-}
+ 
   async function triggerInvite() {
     setMessage("Creating notification...");
 

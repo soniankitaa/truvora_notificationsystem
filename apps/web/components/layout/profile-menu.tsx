@@ -1,6 +1,5 @@
 "use client";
-
-import { User, Settings, LogOut, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 import {
   DropdownMenu,

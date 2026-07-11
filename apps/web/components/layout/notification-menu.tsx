@@ -47,13 +47,18 @@ const [error, setError] = useState("");
 }
 
   useEffect(() => {
-  loadNotifications();
+  const timer = setTimeout(() => {
+    loadNotifications();
+  }, 0);
 
   const interval = setInterval(() => {
     loadNotifications();
-  }, 15000); // every 15 seconds
+  }, 30000);
 
-  return () => clearInterval(interval);
+  return () => {
+    clearTimeout(timer);
+    clearInterval(interval);
+  };
 }, []);
   async function handleNotificationClick(id: string, isRead: boolean) {
   if (isRead) return;
