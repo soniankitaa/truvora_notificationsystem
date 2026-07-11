@@ -1,23 +1,23 @@
 const BASE_URL = "http://localhost:4000";
 
 const headers = {
-  "X-Tenant-Id": "tenant-1",
-  "X-User-Id": "user-1",
+  "Content-Type": "application/json",
+  "x-user-id": "user-1",
+  "x-tenant-id": "tenant-1",
 };
 
 export async function getNotifications() {
-  console.log("Calling:", `${BASE_URL}/notifications`);
-
+ 
   const res = await fetch(`${BASE_URL}/notifications`, {
     headers,
     cache: "no-store",
   });
 
-  console.log("Status:", res.status);
+  
 
   const data = await res.json();
 
-  console.log("Data:", data);
+  
 
   return data;
 }
@@ -34,7 +34,7 @@ export async function getUnreadCount() {
 
   const data = await res.json();
 
-  console.log("Unread:", data);
+  
 
   return data;
 }

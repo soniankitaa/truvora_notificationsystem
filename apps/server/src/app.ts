@@ -5,9 +5,20 @@ import notificationRoutes from "./routes/notifications.js";
 import triggerRoutes from "./routes/triggers.js";
 import { errorMiddleware } from "./middleware/error.middleware.js";
 import healthRoutes from "./routes/health.js";
+
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: [
+      "Content-Type",
+      "x-user-id",
+      "x-tenant-id",
+    ],
+  })
+);
 
 app.use(express.json());
 
@@ -23,5 +34,5 @@ app.use((req, res) => {
 });
 
 app.use(errorMiddleware);
-app.use("/health", healthRoutes);
+
 export default app;
